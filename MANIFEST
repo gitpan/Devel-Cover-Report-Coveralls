@@ -1,5 +1,3 @@
-.gitignore
-.travis.yml
 Build.PL
 Changes
 LICENSE
@@ -7,11 +5,9 @@ META.json
 README.md
 cpanfile
 lib/Devel/Cover/Report/Coveralls.pm
+minil.toml
 t/00_compile.t
 t/01_basic.t
 t/example.pl
-Build.PL
-LICENSE
-META.json
 META.yml
 MANIFEST
