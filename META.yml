@@ -28,7 +28,7 @@ no_index:
 provides:
   Devel::Cover::Report::Coveralls:
     file: lib/Devel/Cover/Report/Coveralls.pm
-    version: 0.03
+    version: 0.04
 requires:
   Devel::Cover: 0
   Furl: 0
@@ -39,6 +39,6 @@ resources:
   bugtracker: https://github.com/kan/coveralls-perl/issues
   homepage: https://github.com/kan/coveralls-perl
   repository: git://github.com/kan/coveralls-perl.git
-version: 0.03
+version: 0.04
 x_contributors:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
