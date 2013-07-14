@@ -10,7 +10,7 @@ configure_requires:
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.4.3, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,7 +28,7 @@ no_index:
 provides:
   Devel::Cover::Report::Coveralls:
     file: lib/Devel/Cover/Report/Coveralls.pm
-    version: 0.05
+    version: 0.06
 requires:
   Devel::Cover: 1.02
   Furl: 0
@@ -39,6 +39,7 @@ resources:
   bugtracker: https://github.com/kan/coveralls-perl/issues
   homepage: https://github.com/kan/coveralls-perl
   repository: git://github.com/kan/coveralls-perl.git
-version: 0.05
+version: 0.06
 x_contributors:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
+  - 'David Steinbrunner <dsteinbrunner@pobox.com>'

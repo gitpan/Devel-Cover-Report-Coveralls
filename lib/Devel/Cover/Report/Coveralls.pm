@@ -2,7 +2,7 @@ package Devel::Cover::Report::Coveralls;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = "0.05";
+our $VERSION = "0.06";
 
 our $CONFIG_FILE = '.coveralls.yml';
 our $API_ENDPOINT = 'https://coveralls.io/api/v1/jobs';
@@ -141,7 +141,7 @@ Devel::Cover::Report::Coveralls - coveralls backend for Devel::Cover
 
 =head1 USAGE
 
-=head Travis CI
+=head2 Travis CI
 
 1. Add your repo to coveralls. https://coveralls.io/repos/new
 
