@@ -1,5 +1,8 @@
 Revision history for Perl extension Devel-Cover-Report-Coveralls
 
+0.07 2014-06-16T04:36:24Z
+    - depend JSON::XS to JSON::PP (thanks fioux, karenetheridge)
+
 0.06 2013-07-14T13:23:11Z
     - fixed pod (thanks dsteinbrunner)
 

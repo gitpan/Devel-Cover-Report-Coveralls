@@ -3,18 +3,18 @@ abstract: 'coveralls backend for Devel::Cover'
 author:
   - 'Kan Fushihara <kan.fushihara@gmail.com>'
 build_requires:
-  FindBin: 0
-  Test::More: 0.98
+  FindBin: '0'
+  Test::More: '0.98'
 configure_requires:
-  CPAN::Meta: 0
-  CPAN::Meta::Prereqs: 0
-  Module::Build: 0.38
+  CPAN::Meta: '0'
+  CPAN::Meta::Prereqs: '0'
+  Module::Build: '0.38'
 dynamic_config: 0
-generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.131560'
+generated_by: 'Minilla/v1.1.0, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Devel-Cover-Report-Coveralls
 no_index:
   directory:
@@ -25,21 +25,22 @@ no_index:
     - eg
     - examples
     - author
+    - builder
 provides:
   Devel::Cover::Report::Coveralls:
     file: lib/Devel/Cover/Report/Coveralls.pm
-    version: 0.06
+    version: '0.07'
 requires:
-  Devel::Cover: 1.02
-  Furl: 0
-  JSON::XS: 0
-  YAML: 0
-  perl: 5.008005
+  Devel::Cover: '1.02'
+  Furl: '0'
+  JSON::PP: '0'
+  YAML: '0'
+  perl: '5.008005'
 resources:
   bugtracker: https://github.com/kan/coveralls-perl/issues
   homepage: https://github.com/kan/coveralls-perl
   repository: git://github.com/kan/coveralls-perl.git
-version: 0.06
+version: '0.07'
 x_contributors:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
   - 'David Steinbrunner <dsteinbrunner@pobox.com>'

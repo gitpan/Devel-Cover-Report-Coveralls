@@ -2,14 +2,14 @@ package Devel::Cover::Report::Coveralls;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = "0.06";
+our $VERSION = "0.07";
 
 our $CONFIG_FILE = '.coveralls.yml';
 our $API_ENDPOINT = 'https://coveralls.io/api/v1/jobs';
 our $SERVICE_NAME = 'coveralls-perl';
 
 use Devel::Cover::DB;
-use JSON::XS;
+use JSON::PP;
 use YAML;
 use Furl;
 
