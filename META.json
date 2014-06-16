@@ -48,6 +48,7 @@
          "requires" : {
             "Devel::Cover" : "1.02",
             "Furl" : "0",
+            "IO::Socket::SSL" : "0",
             "JSON::PP" : "0",
             "YAML" : "0",
             "perl" : "5.008005"
@@ -63,7 +64,7 @@
    "provides" : {
       "Devel::Cover::Report::Coveralls" : {
          "file" : "lib/Devel/Cover/Report/Coveralls.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       }
    },
    "release_status" : "stable",
@@ -77,9 +78,10 @@
          "web" : "https://github.com/kan/coveralls-perl"
       }
    },
-   "version" : "0.07",
+   "version" : "0.08",
    "x_contributors" : [
       "Masayuki Matsuki <y.songmu@gmail.com>",
-      "David Steinbrunner <dsteinbrunner@pobox.com>"
+      "David Steinbrunner <dsteinbrunner@pobox.com>",
+      "Graham Knop <haarg@haarg.org>"
    ]
 }
