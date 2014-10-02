@@ -29,20 +29,23 @@ no_index:
 provides:
   Devel::Cover::Report::Coveralls:
     file: lib/Devel/Cover/Report/Coveralls.pm
-    version: '0.08'
+    version: '0.09'
 requires:
   Devel::Cover: '1.02'
-  Furl: '0'
-  IO::Socket::SSL: '0'
+  HTTP::Tiny: '0'
+  IO::Socket::SSL: '1.42'
   JSON::PP: '0'
+  Mozilla::CA: '0'
+  Net::SSLeay: '1.49'
   YAML: '0'
   perl: '5.008005'
 resources:
-  bugtracker: https://github.com/kan/coveralls-perl/issues
-  homepage: https://github.com/kan/coveralls-perl
-  repository: git://github.com/kan/coveralls-perl.git
-version: '0.08'
+  bugtracker: ssh://git@github.com/kan/coveralls-perl/issues
+  homepage: ssh://git@github.com/kan/coveralls-perl
+  repository: ssh://git@github.com/kan/coveralls-perl.git
+version: '0.09'
 x_contributors:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
   - 'David Steinbrunner <dsteinbrunner@pobox.com>'
   - 'Graham Knop <haarg@haarg.org>'
+  - 'James Raspass <jraspass@gmail.com>'
