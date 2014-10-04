@@ -2,7 +2,7 @@ package Devel::Cover::Report::Coveralls;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = "0.09";
+our $VERSION = "0.10";
 
 our $CONFIG_FILE = '.coveralls.yml';
 our $API_ENDPOINT = 'https://coveralls.io/api/v1/jobs';
@@ -30,6 +30,8 @@ sub get_source {
     }
 
     close(F);
+
+    $file =~ s!^blib/!!;
 
     return +{
         name => $file,
@@ -97,6 +99,22 @@ sub get_config {
     return $json;
 }
 
+sub _parse_line ($) {
+    my $c = shift;
+
+    return sub {
+        my $l = $c->location(shift);
+
+        return $l unless $l;
+
+        if ($l->[0]->uncoverable) {
+            return undef;
+        } else {
+            return $l->[0]->covered;
+        }
+    };
+}
+
 sub report {
     my ($pkg, $db, $options) = @_;
 
@@ -108,8 +126,7 @@ sub report {
         my $f = $cover->file($file);
         my $c = $f->statement();
 
-        push @sfs, get_source( $file,
-            sub { my $l = $c->location( $_[0] ); $l ? $l->[0]->covered : $l } );
+        push @sfs, get_source( $file, _parse_line $c );
     }
 
     my $json = get_config();
@@ -187,6 +204,10 @@ L<https://coveralls.io/>
 L<https://coveralls.io/docs>
 L<https://github.com/coagulant/coveralls-python>
 L<Devel::Cover>
+
+=head2 EXAMPLE
+
+L<https://coveralls.io/r/kan/p5-smart-options>
 
 =head1 LICENSE
 

@@ -6,11 +6,9 @@ build_requires:
   FindBin: '0'
   Test::More: '0.98'
 configure_requires:
-  CPAN::Meta: '0'
-  CPAN::Meta::Prereqs: '0'
   Module::Build: '0.38'
 dynamic_config: 0
-generated_by: 'Minilla/v1.1.0, CPAN::Meta::Converter version 2.140640'
+generated_by: 'Minilla/v2.1.1, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,10 +27,10 @@ no_index:
 provides:
   Devel::Cover::Report::Coveralls:
     file: lib/Devel/Cover/Report/Coveralls.pm
-    version: '0.09'
+    version: '0.10'
 requires:
   Devel::Cover: '1.02'
-  HTTP::Tiny: '0'
+  HTTP::Tiny: '0.014'
   IO::Socket::SSL: '1.42'
   JSON::PP: '0'
   Mozilla::CA: '0'
@@ -40,10 +38,10 @@ requires:
   YAML: '0'
   perl: '5.008005'
 resources:
-  bugtracker: ssh://git@github.com/kan/coveralls-perl/issues
-  homepage: ssh://git@github.com/kan/coveralls-perl
-  repository: ssh://git@github.com/kan/coveralls-perl.git
-version: '0.09'
+  bugtracker: https://github.com/kan/coveralls-perl/issues
+  homepage: https://github.com/kan/coveralls-perl
+  repository: git://github.com/kan/coveralls-perl.git
+version: '0.10'
 x_contributors:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
   - 'David Steinbrunner <dsteinbrunner@pobox.com>'
