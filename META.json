@@ -45,7 +45,7 @@
       "runtime" : {
          "requires" : {
             "Devel::Cover" : "1.02",
-            "HTTP::Tiny" : "0.014",
+            "HTTP::Tiny" : "0.043",
             "IO::Socket::SSL" : "1.42",
             "JSON::PP" : "0",
             "Mozilla::CA" : "0",
@@ -64,7 +64,7 @@
    "provides" : {
       "Devel::Cover::Report::Coveralls" : {
          "file" : "lib/Devel/Cover/Report/Coveralls.pm",
-         "version" : "0.10"
+         "version" : "0.11"
       }
    },
    "release_status" : "stable",
@@ -78,7 +78,7 @@
          "web" : "https://github.com/kan/coveralls-perl"
       }
    },
-   "version" : "0.10",
+   "version" : "0.11",
    "x_contributors" : [
       "Masayuki Matsuki <y.songmu@gmail.com>",
       "David Steinbrunner <dsteinbrunner@pobox.com>",
